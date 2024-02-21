@@ -4,13 +4,13 @@
   "description": "Backend for task planner application",
   "main": "index.ts",
   "repository": "https://github.com/annabasenyuk/task_planner_app-backend",
+  "author": "Render Developers",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "start": "ts-node index.ts",
     "dev": "ts-node index.ts"
   },
-  "author": "Render Developers",
-  "license": "MIT",
-  "private": false,
   "dependencies": {
     "@types/mongoose": "^5.11.97",
     "cors": "^2.8.5",
@@ -20,7 +20,7 @@
     "uuid": "^9.0.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=14"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
