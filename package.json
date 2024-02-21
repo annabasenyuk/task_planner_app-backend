@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend for task planner application",
   "main": "index.ts",
+  "repository": "https://github.com/annabasenyuk/task_planner_app-backend",
   "scripts": {
     "start": "ts-node index.ts",
     "dev": "ts-node index.ts"

@@ -1,11 +1,8 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
-
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 8000;
