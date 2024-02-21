@@ -5,7 +5,7 @@ import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
-const PORT = process.env.PORT || 8000;
+const port = process.env.PORT || 3001;
 const TASK_FILE_PATH = path.join(__dirname, 'public', 'tasks.json');
 
 interface Task {
@@ -115,6 +115,7 @@ app.patch('/task/:id', (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀🚀🚀 Server is running on http://localhost:${PORT} 🚀🚀🚀`);
-});
+const server = app.listen(port, () => console.log(`🚀🚀🚀 Server is running on ${port}!🚀🚀🚀`));
+
+server.keepAliveTimeout = 120 * 1000;
+server.headersTimeout = 120 * 1000;
